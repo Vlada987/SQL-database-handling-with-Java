@@ -8,7 +8,7 @@ public class SQLexapmples {
 
     final String url = "jdbc:mysql://127.0.0.1:3306/baza";
     final String user ="root";
-    final String pass = "4365691vlada";
+    final String pass = "4361vlada";
 
     public Connection connectToDatabase() throws SQLException{
       Connection connect = DriverManager.getConnection(url,user,pass);
