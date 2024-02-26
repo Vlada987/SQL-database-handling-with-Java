@@ -30,16 +30,18 @@ public class SQLexapmples {
 
     }
 
-    public void editDataInTable(){
-
+    public void editDataInTable(String query){
+       Statement st = connectToDatabase().createStatement();
+       st.executeUpdate(); 
 
     }
     public static void main(String[] args) throws SQLException {
       
       SQLexapmples sqle = new SQLexapmples();
       String q1= "select  * from lista where id=1"; 
+      String q2 = "update lista set grad ='pancevo'where ime='jova'";
       sqle.findDataInTable(q1,2,2);
-      
+      sqle.editDataInTable(q2);
 
         
     }
